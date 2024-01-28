@@ -1,0 +1,246 @@
+<div class="deng-box2">
+  <div class="deng">
+    <div class="xian"></div>
+    <div class="deng-a">
+      <div class="deng-b"><div class="deng-t">年</div></div>
+    </div>
+    <div class="shui shui-a">
+      <div class="shui-c"></div>
+      <div class="shui-b"></div>
+    </div>
+  </div>
+</div>
+
+<div class="deng-box3">
+  <div class="deng">
+    <div class="xian"></div>
+    <div class="deng-a">
+      <div class="deng-b"><div class="deng-t">新</div></div>
+    </div>
+    <div class="shui shui-a">
+      <div class="shui-c"></div>
+      <div class="shui-b"></div>
+    </div>
+  </div>
+</div>
+
+<div class="deng-box1">
+  <div class="deng">
+    <div class="xian"></div>
+    <div class="deng-a">
+      <div class="deng-b"><div class="deng-t">乐</div></div>
+    </div>
+    <div class="shui shui-a">
+      <div class="shui-c"></div>
+      <div class="shui-b"></div>
+    </div>
+  </div>
+</div>
+
+<div class="deng-box">
+  <div class="deng">
+    <div class="xian"></div>
+    <div class="deng-a">
+      <div class="deng-b"><div class="deng-t">快</div></div>
+    </div>
+    <div class="shui shui-a">
+      <div class="shui-c"></div>
+      <div class="shui-b"></div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  .deng-box {
+    position: fixed;
+    top: -40px;
+    right: -20px;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  .deng-box1 {
+    position: fixed;
+    top: -30px;
+    right: 10px;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  .deng-box2 {
+    position: fixed;
+    top: -40px;
+    left: -20px;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  .deng-box3 {
+    position: fixed;
+    top: -30px;
+    left: 10px;
+    z-index: 9999;
+    pointer-events: none;
+  }
+
+  .deng-box1 .deng,
+  .deng-box3 .deng {
+    position: relative;
+    width: 60px;
+    height: 45px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    transform-origin: 50% -100px;
+    animation: swing 5s infinite ease-in-out;
+    box-shadow: -5px 5px 30px 4px #fc903d;
+  }
+
+  .deng {
+    position: relative;
+    width: 60px;
+    height: 45px;
+    margin: 50px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.8);
+    border-radius: 50% 50%;
+    transform-origin: 50% -100px;
+    animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 25px 4px #fa6c00;
+  }
+
+  .deng-a {
+    width: 50px;
+    height: 45px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: 6px 4px 4px 4px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+  }
+
+  .deng-b {
+    width: 27.5px;
+    height: 45px;
+    background: #d8000f;
+    background: rgba(216, 0, 15, 0.1);
+    margin: -2px 4px 4px 11px;
+    border-radius: 50% 50%;
+    border: 2px solid #dc8f03;
+  }
+
+  .xian {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    width: 1px;
+    height: 10px;
+    background: #dc8f03;
+  }
+
+  .shui-a {
+    position: relative;
+    width: 2.5px;
+    height: 10px;
+    margin: -2.5px 0 0 15px;
+    animation: swing 4s infinite ease-in-out;
+    transform-origin: 50% -45px;
+    background: orange;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .shui-b {
+    position: absolute;
+    top: 14px;
+    left: -1px;
+    width: 5px;
+    height: 5px;
+    background: #dc8f03;
+    border-radius: 50%;
+  }
+
+  .shui-c {
+    position: absolute;
+    top: 18px;
+    left: -1px;
+    width: 10px;
+    height: 17.5px;
+    background: orange;
+    border-radius: 0 0 0 5px;
+  }
+
+  .deng:before {
+    position: absolute;
+    top: -7px;
+    left: 14.5px;
+    height: 6px;
+    width: 30px;
+    content: " ";
+    display: block;
+    z-index: 999;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #dc8f03;
+    background: orange;
+    background: linear-gradient(
+      to right,
+      #dc8f03,
+      orange,
+      #dc8f03,
+      orange,
+      #dc8f03
+    );
+  }
+
+  .deng:after {
+    position: absolute;
+    bottom: -7px;
+    left: 5px;
+    height: 6px;
+    width: 30px;
+    content: " ";
+    display: block;
+    margin-left: 10px;
+    border-radius: 0 0 5px 5px;
+    border: solid 1px #dc8f03;
+    background: orange;
+    background: linear-gradient(
+      to right,
+      #dc8f03,
+      orange,
+      #dc8f03,
+      orange,
+      #dc8f03
+    );
+  }
+
+  .deng-t {
+    font-family: 华文行楷, Arial, Lucida Grande, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    color: #dc8f03;
+    font-weight: 700;
+    line-height: 42.5px;
+    text-align: center;
+  }
+
+  .night .deng-box,
+  .night .deng-box1,
+  .night .deng-t {
+    background: 0 0 !important;
+  }
+
+  @keyframes swing {
+    0% {
+      transform: rotate(-10deg);
+    }
+
+    50% {
+      transform: rotate(10deg);
+    }
+
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+</style>
+
